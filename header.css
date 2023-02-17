@@ -1,0 +1,183 @@
+.custom-nav{
+    height: 72px;
+    width: 100%;
+    border-bottom: 1px solid #cec7c796;
+}
+.first-part{
+   
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #333333;
+    font-size: 16px;
+}
+.custom-dropdown{
+    margin-left: 35px;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+
+.second-part{
+    height:72px;
+   
+}
+.custom-dropdown-button{
+    /* margin-right: 135px!important; */
+}
+.profile-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.header-part{
+    height: 78px;
+}
+.filter-part{
+    border-bottom: 2px solid #cec7c796;
+}
+.search-text{
+    height: 78px;
+    border: none;
+    font-size: 25px;
+  
+}
+.search-text:focus{
+    border: none;
+    outline: none;
+}
+.search-label{
+    margin-right: 12px;
+}
+.search-icon{
+    padding-bottom: 5px;
+}
+.filter-icon{
+    width: 62px;
+    height: 50px;
+}
+
+.filter-part-category-wise{
+
+}
+
+.filter-common{
+    height: 78px;
+    border: none;
+    border-left: 1px solid #cec7c796;
+    border-right: 1px solid #cec7c796;
+    padding-left: 10px;
+    
+};
+
+select option{
+    border-radius: 0px;
+}
+
+select:focus{
+    outline: none;
+}
+.filter-list{
+    
+}
+.filter-name{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: fit-content;
+    border: 1px solid #cec7c796;
+    border-radius: 30px;
+    margin-right: 15px;
+    padding: 5px 10px;
+    
+}
+
+.filter-design{
+    margin-right: 8px;
+    font-size: 15px;
+    
+    
+}
+.cross-icon{
+    width: 10px;
+    height: 10px;
+}
+.clear-btn{
+    text-decoration: none;
+    color: black;
+}
+
+/* card css for input*/
+
+/* .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+} */
+
+.custom-card{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.card-image1{
+     margin-left: 0px;
+     margin-right: 0px;
+}
+
+.theme-title{
+    margin-top: -12px;
+    width: 127px;
+    height: 35px;
+    background: white;
+    border-radius: 18px;
+    
+    
+
+}
+
+.bi-star-fill{
+    color: yellow;
+    width: 15px;
+    height: 15px;
+}
+.bi-gray{
+    color: gray;
+}
+
+@media screen and (max-width:991px) {
+    .filter-part-category-wise{
+        display: none;
+    }
+}
+

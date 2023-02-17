@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard Page | Company</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Meta descriptions may be included in search results to concisely summarize page content.">
+    <link rel="shortcut icon" href="images/favicon-icon.ico" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="header.css"> -->
+    <link rel="stylesheet" type="text/css" href="./header.css">
+    <link rel="stylesheet" type="text/css" href="./filter.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <script>
+
+
+        let data = ["Ram", "Shyam", "Sita", "Gita"];
+
+        let list = document.getElementById("filter-name");
+
+        data.forEach((item) => {
+            let li = document.createElement("li");
+            li.innerText = item;
+            list.appendChild(li);
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <div class="text-center custom-nav">
+        <div class="  row m-0 container-fluid container-lg mx-auto">
+            <div class="first-part d-inline text-center col-md-8 col-sm-7 col-8">
+                <span class="header-text">Stories</span>
+                <div class="dropdown d-inline custom-dropdown">
+                    <button class=" dropdown-toggle profile bg-white border-0" type="button" data-bs-toggle="dropdown">
+                        <span class="header-text">Policy</span>
+                        <img src="./assets/drop-down.png" class=" ms-1">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown d-inline second-part col-md-4 col-sm-5 col-4 text-end ">
+                <button class=" dropdown-toggle border-0 bg-white text-end  mt-3 custom-dropdown-button p-0"
+                    type="button" data-bs-toggle="dropdown">
+                    <img src="./assets/user-img-large1.png" class="profile-image">
+                    <span class="d-none d-sm-inline">Evan Donohoe</span>
+                    <img class="d-none d-sm-inline" src="./assets/drop-down.png" class="ic-down ms-1">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="second-header filter-part justify-content-center">
+            <div class="row container mx-auto">
+                <div class="search-part col-lg-6 text-start p-0 d-flex justify-content-between">
+                    <div class="search-container d-inline">
+                        <label for="search" class="search-label">
+                            <img class="search-icon" src="./assets/search.png">
+                        </label>
+                        <input id="search" class="search-text col-8" type="text" placeholder="Search mission...">
+                    </div>
+                    <img src="./assets/filter.png" alt="filter" srcset=""
+                        class="  d-md-inline d-lg-none filter-icon my-auto">
+                </div>
+                <div class="col-lg-6 filter-part-category-wise row p-0">
+                    <select name="Country" class="country-filter filter-common col-lg-3 col-sm-3">
+                        <option value="default" selected>Country</option>
+                        <option value="india">India</option>
+                        <option value="russia">Russia</option>
+                        <option value="us">US</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="melborne">Melborne</option>
+                        <option value="uk">UK</option>
+                    </select>
+                    <select name="City" class="city-filter filter-common col-lg-3 col-sm-3">
+                        <option value="default">City</option>
+                        <option value="ahemdabad">Ahemdabad</option>
+                        <option value="rajkot">Rajkot</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+
+                    </select>
+                    <select name="Theme" class="theme-filter filter-common col-lg-3 col-sm-3">
+                        <option value="default">Theme</option>
+                        <option value="environment">Environment</option>
+                        <option value="children">Children</option>
+                        <option value="nutrition">Nutrition</option>
+                        <option value="animals">Animals</option>
+                        <option value="health">Health</option>
+                        <option value="edu">Education</option>
+                    </select>
+                    <select name="country" class="skill-filter filter-common col-lg-3 col-sm-3">
+                        <option value="default">Skill</option>
+                        <option value="india">Music Theory</option>
+                        <option value="russia">Reasearch</option>
+                        <option value="us">Administrative</option>
+                        <option value="turkey">Data Entry</option>
+                        <option value="melborne">Animal Therapy</option>
+                        <option value="uk">Transactions</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-list container d-flex flex-wrap">
+
+            <div id="filter-name" class="filter-name ">
+                <p class="filter-design d-inline">Tree Plantation</p>
+                <img src="./assets/cancel.png" class="cross-icon my-auto d-inline">
+            </div>
+            <div id="filter-name" class="filter-name ">
+                <p class="filter-design d-inline">Canada</p>
+                <img src="./assets/cancel.png" class="cross-icon my-auto d-inline">
+            </div>
+            <div id="filter-name" class="filter-name ">
+                <p class="filter-design d-inline">Toronto</p>
+                <img src="./assets/cancel.png" class="cross-icon my-auto d-inline">
+            </div>
+            <div id="filter-name" class="filter-name ">
+                <p class="filter-design d-inline">Montreal</p>
+                <img src="./assets/cancel.png" class="cross-icon my-auto d-inline">
+            </div>
+            <div id="filter-name" class="filter-name ">
+                <p class="filter-design d-inline">Environment</p>
+                <img src="./assets/cancel.png" class="cross-icon my-auto d-inline">
+            </div>
+            <div id="filter-name" class="filter-name ">
+                <p class="filter-design d-inline">Nutrition</p>
+                <img src="./assets/cancel.png" class="cross-icon my-auto d-inline">
+            </div>
+            <div id="filter-name" class="filter-name ">
+                <p class="filter-design d-inline">Anthropology</p>
+                <img src="./assets/cancel.png" class="cross-icon my-auto d-inline">
+            </div>
+            <div id="filter-name" class="filter-name ">
+                <p class="filter-design d-inline">Environmental Science</p>
+                <img src="./assets/cancel.png" class="cross-icon my-auto d-inline">
+            </div>
+
+            <a href="#" class="clear-btn my-auto">Clear all</a>
+
+
+        </div>
+
+        <div class="title-header">
+
+        </div>
+
+        <div class="card-part container-lg p-0">
+
+            <div class="row d-flex flex-row justify-content-center g-2">
+
+                <div class="card-conainer col-lg-4 col-md-6 col-xs-12">
+
+                <div class="card custom-card col-lg-4 col-md-6 col-xs-12">
+
+                    <img src="./assets/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-image1"
+                        alt="">
+                    <div class="theme-title mx-auto">Environment</div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vel
+                            soluta! Sed ipsam cumque, delectus dignissimos eos facere laboriosam nostrum nam voluptas.
+                        </p>
+                        <div class="country-rating d-flex justify-content-between mx-4">
+                            <span class="organization-name">Tree Canada</span>
+
+                            <div class="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill bi-gray"></i>
+                                <i class="bi bi-star-fill bi-gray"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card-conainer col-lg-4 col-md-6 col-xs-12">
+
+                <div class="card custom-card col-lg-4 col-md-6 col-xs-12">
+
+                    <img src="./assets/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-image1"
+                        alt="">
+                    <div class="theme-title mx-auto">Environment</div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vel
+                            soluta! Sed ipsam cumque, delectus dignissimos eos facere laboriosam nostrum nam voluptas.
+                        </p>
+                        <div class="country-rating d-flex justify-content-between mx-4">
+                            <span class="organization-name">Tree Canada</span>
+
+                            <div class="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill bi-gray"></i>
+                                <i class="bi bi-star-fill bi-gray"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card-conainer col-lg-4 col-md-6 col-xs-12">
+
+                <div class="card custom-card col-lg-4 col-md-6 col-xs-12">
+
+                    <img src="./assets/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-image1"
+                        alt="">
+                    <div class="theme-title mx-auto">Environment</div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vel
+                            soluta! Sed ipsam cumque, delectus dignissimos eos facere laboriosam nostrum nam voluptas.
+                        </p>
+                        <div class="country-rating d-flex justify-content-between mx-4">
+                            <span class="organization-name">Tree Canada</span>
+
+                            <div class="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill bi-gray"></i>
+                                <i class="bi bi-star-fill bi-gray"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
